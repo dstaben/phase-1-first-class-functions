@@ -91,7 +91,7 @@ function exerciseRoutine(postRunActivity) {
   postRunActivity();
 }
 ```
-
+4
 Notice that, in `exerciseRoutine()`, the `postRunActivity` parameter is a
 _callback function_ — we call it after we call `runFiveMiles()`. Now let's try
 to use this new function we created in our `Monday()` function:
@@ -185,7 +185,7 @@ function morningRoutine(exercise) {
 
   exerciseRoutine(exercise);
 
-  // we could give this function a name if we wanted to, but since
+  // we could give this function a namqe if we wanted to, but since
   // it's only available _inside_ morningRoutine(), we don't need to
   return function () {
     console.log(`Nom nom nom, this ${breakfast} is delicious!`);
